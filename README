@@ -21,6 +21,11 @@ and `the tutorial on writing filters`__.
 
 __ http://johnmacfarlane.net/pandoc/scripting.html
 
+For an alternative library for writing pandoc filters, with
+a more "Pythonic" design, see `panflute`__.
+
+__ https://github.com/sergiocorreia/panflute
+
 Compatibility
 ----------------
 Pandoc 1.16 introduced link and image `attributes` to the existing
@@ -119,8 +124,9 @@ The main functions ``pandocfilters`` exports are
 -  ``attributes(attrs)``
 
    Returns an attribute list, constructed from the dictionary attrs.
+
 How to use
---------------
+----------
 Most users will only need ``toJSONFilter``.  Here is a simple example
 of its use::
 
